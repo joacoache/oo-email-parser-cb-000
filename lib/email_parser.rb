@@ -13,7 +13,7 @@ class EmailParser
     @@all << emails
   end
 
-  def self.parse(emails)
+  def parse(emails)
     parsed = emails.split(/,|\s/)
     parsed = parsed.uniq
   end
