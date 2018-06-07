@@ -9,6 +9,10 @@ class EmailParser
 
   @@all = []
 
+  def initialize(emails)
+    @all << emails
+  end
+     
   def self.parse(emails)
     parsed = emails.split(/,|\s/)
     parsed = parsed.uniq
