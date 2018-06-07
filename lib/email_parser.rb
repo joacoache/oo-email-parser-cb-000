@@ -12,7 +12,7 @@ class EmailParser
   def initialize(emails)
     @all << emails
   end
-     
+
   def self.parse(emails)
     parsed = emails.split(/,|\s/)
     parsed = parsed.uniq
